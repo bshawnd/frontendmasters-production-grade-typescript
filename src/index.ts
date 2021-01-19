@@ -21,11 +21,12 @@ export function avg(a: number, b: number, c: number): number {
  * @param a - first number
  * @param b - second number
  * @param c - third number
+ * @param d - fourth number
  *
  * @beta
  */
-export function sum3(a: number, b: number, c: number): number {
-  return sum2(a, sum2(b, c));
+export function sum3(a: number, b: number, c: number, d = 0): number {
+  return sum2(a, b) + sum2(c, d);
 }
 
 /**
